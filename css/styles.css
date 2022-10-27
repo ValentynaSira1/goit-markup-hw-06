@@ -342,11 +342,16 @@ padding: 0 15px;
     border-color: var(--color-brend); 
 }
 
+.modal-contact{
+    position: relative;
+}
+
 .modal-icon{
     position: absolute;
     top: 50%;
     left: 12px;
     fill: currentcolor;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -362,7 +367,8 @@ padding: 0 15px;
     border-radius: 4px;
     outline: none;
     margin-bottom: 10px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    resize: none;
 }
 
 .modal-textarea:focus{ 
@@ -681,7 +687,11 @@ color: var(--color-brend);
 .footer{
     display: flex;
     align-items: baseline;
-    gap: 70px;
+    flex-shrink: 0;
+}
+.foot{
+    margin-right: 70px;
+    width: 231px;
 }
 
 .foot-text{
@@ -720,7 +730,6 @@ color: var(--color-brend);
 .foot-cont{
     display: flex;
     align-items: baseline;
-    gap: 70px;
 }
 .footer-form{
     display: flex;
@@ -734,12 +743,13 @@ color: var(--color-brend);
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    padding-left: 15px;
 }
 
 .footer-mail{
     margin-left: 93px;
+    width: 570px;
 }
+
 .footer-input{
     width: 358px;
     height: 50px;
@@ -748,12 +758,13 @@ color: var(--color-brend);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: #2f303a;
+    padding-left: 15px;
+    color: var(--color-accent);
 }
 .btn{
     width: 200px;
     height: 50px;
     display: flex;
-    gap: 12px;
     justify-content: center;
     border: none;
 }
